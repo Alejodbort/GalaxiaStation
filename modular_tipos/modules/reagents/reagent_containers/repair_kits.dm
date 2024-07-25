@@ -110,9 +110,27 @@
 
 /obj/item/storage/medkit/sierpinski/Initialize(mapload)
 	. = ..()
-	atom_storage.max_total_storage = 14
-	atom_storage.max_slots = 7
-	atom_storage.can_hold = typecacheof(list(/obj/item/reagent_containers/hypospray/medipen/sierpinski))
+	atom_storage.max_total_storage = 20
+	atom_storage.max_slots = 10
+	atom_storage.can_hold = typecacheof(list(
+		/obj/item/reagent_containers/hypospray/medipen/sierpinski,
+		/obj/item/healthanalyzer,
+		/obj/item/dnainjector,
+		/obj/item/reagent_containers/dropper,
+		/obj/item/reagent_containers/cup/beaker,
+		/obj/item/reagent_containers/cup/bottle,
+		/obj/item/reagent_containers/cup/tube,
+		/obj/item/reagent_containers/pill,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/reagent_containers/medigel,
+		/obj/item/reagent_containers/spray,
+		/obj/item/storage/box/bandages,
+		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/flashlight/pen,
+		/obj/item/extinguisher/mini,
+		/obj/item/reagent_containers/hypospray,
+		/obj/item/reagent_containers/blood,))
 
 /obj/item/storage/medkit/sierpinski/PopulateContents()
 	generate_items_inside(list(

@@ -65,6 +65,10 @@
 	item_type = /obj/item/gun/ballistic/revolver/sierpinski
 	cost = PAYCHECK_COMMAND * 6
 
+/datum/armament_entry/company_import/sierpinski/weapons/shotgun
+	item_type = /obj/item/gun/ballistic/shotgun/riot/sierpinski
+	cost = PAYCHECK_COMMAND * 8
+
 /datum/armament_entry/company_import/sierpinski/weapons/smg
 	item_type = /obj/item/gun/ballistic/automatic/sierpinski/no_mag
 	cost = PAYCHECK_COMMAND * 10
@@ -84,10 +88,15 @@
 	item_type = /obj/item/ammo_box/s12mm
 	cost = PAYCHECK_COMMAND * 2
 
+/datum/armament_entry/company_import/sierpinski/ammo/s12g
+	name = "Ammo box (12-gauge Shotgun Shells)"
+	item_type = /obj/item/ammo_box/advanced/s12gauge/sierpinski
+	cost = PAYCHECK_COMMAND * 3
+
 /datum/armament_entry/company_import/sierpinski/ammo/s8mm
 	name = "Ammo box (8x22mm 'Kompact')"
 	item_type = /obj/item/ammo_box/s8mm
-	cost = PAYCHECK_COMMAND * 3
+	cost = PAYCHECK_COMMAND * 4
 
 /datum/armament_entry/company_import/sierpinski/ammo/s16mm
 	name = "Ammo box (16x80mm Armor-Piercing)"
